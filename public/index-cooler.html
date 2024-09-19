@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <!-- Mobile NavBar -->
+    <header
+      class="md:hidden fixed w-screen py-5 border-b-[1.5px] flex justify-center"
+    >
+      <button class="absolute top-1/2 -translate-y-1/2 left-5 text-xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#">
+        <img src="./images/logo.svg" alt="coolor logo" />
+      </a>
+    </header>
+    <!-- End Mobile NavBar -->
+
+    <!-- Big NarBar -->
+    <header
+      class="hidden md:flex justify-between items-center py-2 px-6 border-b-[1.5px]"
+    >
+      <div class="flex items-center gap-5">
+        <a href="#">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+        <a href="#" class="group hidden lg:flex gap-3">
+          <div
+            class="border-2 border-orange-200 group-hover:border-orange-600 transition duration-500 rounded-md size-8 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-poo-storm"></i>
+          </div>
+          <p class="text-[12px] leading-4 text-gray-600">
+            I've written
+            <span class="text-blue-600 font-bold">a few thousand words</span> on
+            why traditional <br />
+            "Semantic Class Names" are the reason CSS is hard to maintain.
+            <span class="text-blue-600">Try for free</span>
+          </p>
+        </a>
+      </div>
+      <ul class="flex items-center gap-5 cursor-pointer">
+        <li class="hover:text-blue-500">Tool</li>
+        <li class="text-pink-500 hover:text-green-500">
+          <a href="#">Go Pro</a>
+        </li>
+        <li class="w-[0.7px] h-8 bg-gray-300"></li>
+        <li class="hover:to-blue-500"><a href="#">Sign in</a></li>
+        <li>
+          <a
+            href="#"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-3 rounded-lg flex justify-center items-center"
+          >
+            Sign Up
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- End Big NarBar -->
+  </body>
+</html>
