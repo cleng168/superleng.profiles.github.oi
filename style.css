@@ -1,0 +1,9 @@
+.text-anime {
+    -webkit-animation:name 2s infinite;
+}
+
+@keyframes name {
+    0% {color:magenta;}
+    50% {color:blue;}
+    100%{color:green}
+}
