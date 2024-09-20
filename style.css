@@ -1,9 +1,16 @@
 .text-anime {
-    -webkit-animation:name 2s infinite;
+    -webkit-animation: textColorChange 2s infinite;
+    animation: textColorChange 2s infinite;
 }
 
-@keyframes name {
-    0% {color:magenta;}
-    50% {color:blue;}
-    100%{color:green}
+@-webkit-keyframes textColorChange {
+    0% { color: magenta; }
+    50% { color: blue; }
+    100% { color: green; }
+}
+
+@keyframes textColorChange {
+    0% { color: magenta; }
+    50% { color: blue; }
+    100% { color: green; }
 }
